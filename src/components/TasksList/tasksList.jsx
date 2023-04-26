@@ -1,9 +1,16 @@
 import React from 'react'
+import TodoFilter from '../TodoFilters/todoFilter'
+import Todo from '../Todo/todo'
 
-const TasksList = ({children}) => {
+const TasksList = ({todos}) => {
   return (
     <div className='flex flex-col mt-7 rounded-lg overflow-hidden shadow-2xl'>
-        {children}
+        {todos.map(todo => {
+          return (
+            <Todo key={todo.id} todo={todo}/>
+          )
+        })}
+        <TodoFilter/>
     </div>
   )
 }
