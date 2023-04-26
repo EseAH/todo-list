@@ -1,5 +1,5 @@
 import './App.css'
-import TasksList from './components/Input/TasksList/tasksList'
+import TasksList from './components/TasksList/tasksList'
 import Input from './components/Input/input'
 import Title from './components/Title/title'
 import Todo from './components/Todo/todo'
